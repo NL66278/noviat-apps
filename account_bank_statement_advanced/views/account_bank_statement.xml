@@ -97,7 +97,6 @@
       <field name="inherit_id" ref="account_cancel.bank_statement_cancel_form_inherit"/>
       <field name="arch" type="xml">
         <button name="cancel" position="attributes">
-          <attribute name="name">action_cancel</attribute>
           <attribute name="icon">gtk-cancel</attribute>
           <attribute name="attrs">{'invisible': ['|', ('move_state', '=', False), ('state', '=', 'confirm')]}</attribute>
         </button>
